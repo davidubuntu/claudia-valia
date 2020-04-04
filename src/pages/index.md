@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Design your wolrd
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Design your wolrd
+subheading: Claudia Perez Valía
 mainpitch:
   title: Why Kaldi
   description: >
