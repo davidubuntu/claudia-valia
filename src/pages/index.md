@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Design your wolrd
-image: /img/home-jumbotron.jpg
+image: /img/flavor_wheel.jpg
 heading: Design your wolrd
 subheading: Claudia Perez Valía
 mainpitch:
