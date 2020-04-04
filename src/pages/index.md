@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Design your wolrd
+title: Design your wolrd for happiness
 image: /img/flavor_wheel.jpg
 heading: Design your wolrd
 subheading: Claudia Perez Valía
