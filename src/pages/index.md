@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Design your wolrd for happiness
-image: /img/blog-index.jpg
+image: /img/toa-heftiba-fv3gconvsss-unsplash.jpg
 heading: Design your wolrd
 subheading: Claudia Perez Valía
 mainpitch:
