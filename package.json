@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-portfolio-netlify-cms",
-  "description": "Portfolio developed with Gatsby and Netlify CMS",
+  "name": "gatsby-starter-netlify-cms",
+  "description": "Example Gatsby, and Netlify CMS project",
   "version": "1.1.3",
-  "author": "David Díez",
+  "author": "Austin Green",
   "dependencies": {
     "@emotion/styled": "^10.0.27",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
