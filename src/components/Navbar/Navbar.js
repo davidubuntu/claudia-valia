@@ -55,7 +55,7 @@ const Navbox = styled.div`
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
     height: 92vh;
-    background: linear-gradient(190deg, var(--bg) 70%, var(--bgCode) 70%);
+    /* background: linear-gradient(190deg, var(--bg) 70%, var(--bgCode) 70%); */
   }
 `
 

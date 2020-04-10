@@ -14,6 +14,7 @@ const NavbarLinks = () => {
     <>
       {links.map(({ slug, page, status }) => (
         <NavItem
+          key={page}
           activeStyle={{ color: "var(--textLink" }}
           partiallyActive={status}
           to={slug}
@@ -37,7 +38,6 @@ const NavItem = styled(Link)`
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 80%;
-
   :after {
     position: absolute;
     bottom: 0;
