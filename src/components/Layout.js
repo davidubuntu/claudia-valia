@@ -1,12 +1,25 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Navbar, Footer } from "../components"
-import "./all.sass"
+import styled from "@emotion/styled"
+// import "./all.sass"
+import "../styles/index.scss"
 import useSiteMetadata from "./SiteMetadata"
 import { withPrefix } from "gatsby"
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
+  const MainWrapper = styled.div`
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--textNormal);
+    flex-grow: 1;
+    justify-content: space-around;
+  `
   return (
     <div>
       <Helmet>
@@ -48,7 +61,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <MainWrapper>{children}</MainWrapper>
       <Footer />
     </div>
   )

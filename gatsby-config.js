@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Claudia Valia Interior Design",
     description: "Claudia Perez Valia is an interior desginer",
+    author: "David Díez Rodríguez",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -56,6 +57,15 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        height: 3,
+        prependToBody: false,
+        excludePaths: ["/contact", "/blog"],
+        color: `#d86a7e`,
       },
     },
     {
