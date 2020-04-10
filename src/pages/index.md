@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
 title: Design your wolrd for happiness
-image: /img/blog-index.jpg
+image: /img/toa-heftiba-fv3gconvsss-unsplash.jpg
 heading: Design your wolrd
 subheading: Claudia Perez Valía
 mainpitch:
-  title: Why Kaldi
+  title: Why Interior Design
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
