@@ -3,9 +3,7 @@ templateKey: about-page
 path: /about
 title: About my experience as a designer
 ---
-
-
-![Cover](/img/bg-cvalia.jpeg "Cover")
+![Cover](/img/bg-cvalia.jpeg "Cover About")
 
 ### Shade-grown coffee
 
