@@ -2,8 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { PreviewCompatibleImage } from "../components"
 
-const FeatureGrid = ({ gridItems }) => (
+const FeatureGrid = ({ gridItems, heading, description }) => (
   <div className="columns is-multiline">
+    <h1>{heading}</h1>
+    <h2>{description}</h2>
     {gridItems.map(item => (
       <div key={item.text} className="column is-6">
         <section className="section">

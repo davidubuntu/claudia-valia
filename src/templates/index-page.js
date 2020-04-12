@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
-import "./index-page.sass"
 
 import { Layout, Features, BlogRoll } from "../components"
 
@@ -75,7 +74,11 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+                <Features
+                  gridItems={intro.blurbs}
+                  heading={intro.heading}
+                  description={intro.description}
+                />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">

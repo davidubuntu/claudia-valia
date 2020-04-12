@@ -12,13 +12,13 @@ body {
   --hr: #00000033;
   background-color: var(--bg);
   --bgCode: #cccccc;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 150px,
-    #fafafa 150px,
-    #fafafa 340px
-  );
+  //   background-image: repeating-linear-gradient(
+  //     45deg,
+  //     transparent,
+  //     transparent 150px,
+  //     #fafafa 150px,
+  //     #fafafa 340px
+  //   );
 }
 
 ::selection {
@@ -199,7 +199,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em lato, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
