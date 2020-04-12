@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Design your wolrd for happiness
-image: /img/apple-touch-icon.png
+image: /img/bg-home.jpg
 heading: Design your wolrd
 subheading: Claudia Perez Valía
 mainpitch:
