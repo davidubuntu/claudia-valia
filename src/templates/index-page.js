@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
@@ -35,7 +35,7 @@ export const IndexPageTemplate = ({
           flexDirection: "column",
         }}
       >
-        <h1 className="main-title has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
+        <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
           {title}
         </h1>
         <h3
