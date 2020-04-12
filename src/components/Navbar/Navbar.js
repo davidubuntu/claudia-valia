@@ -5,18 +5,22 @@ import Logo from "./Logo"
 import Social from "../Social"
 
 const Navigation = styled.nav`
-  height: 10vh;
+  height: 12vh;
   display: flex;
   position: relative;
-  justify-content: space-between;
-  margin: 0 auto;
+  align-items: center;
   z-index: 2;
-  padding: 0 3vw;
-  align-self: center;
-  max-width: 1400px;
-
+  transition: all 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  /* background: #fff;
+  padding: 3.6rem 6rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  z-index: 9999; */
   @media (max-width: 768px) {
-    padding: 0 10vw;
+    justify-content: space-between;
+    padding: 2rem;
     position: sticky;
     height: 8vh;
     top: 0;
@@ -26,7 +30,6 @@ const Navigation = styled.nav`
     background-color: var(--bg);
   }
 `
-
 const Toggle = styled.div`
   display: none;
   height: 100%;
@@ -42,7 +45,8 @@ const Navbox = styled.div`
   height: 100%;
   justify-content: space-around;
   align-items: center;
-  transition: left 0.5s;
+  /* transition: left 0.5s; */
+  transition: all 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -60,6 +64,7 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
+  z-index: 3333;
   background-color: var(--textNormal);
   width: 30px;
   height: 2px;

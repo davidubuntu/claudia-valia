@@ -14,7 +14,7 @@ const NavbarLinks = () => {
     <>
       {links.map(({ slug, page, status }) => (
         <NavItem
-          key={page}
+          key={slug}
           activeStyle={{ color: "var(--textLink" }}
           partiallyActive={status}
           to={slug}
@@ -32,12 +32,12 @@ const NavItem = styled(Link)`
   text-decoration: none;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
   transition: all 200ms ease-in;
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 80%;
+  font-size: 10px;
+  margin: 0 1.5vw;
+  letter-spacing: 0.25em;
   :after {
     position: absolute;
     bottom: 0;
@@ -46,13 +46,13 @@ const NavItem = styled(Link)`
     width: 0%;
     content: ".";
     color: transparent;
-    background: var(--textLink);
+    background: var(--textNormal);
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: var(--textLink);
+    color: var(--textNormal);
     ::after {
       width: 100%;
     }

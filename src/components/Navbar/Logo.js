@@ -4,21 +4,17 @@ import Img from "gatsby-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const LogoWrap = styled.div`
-  margin: auto 0;
-  min-width: 36px;
-  max-width: 40px;
-  background-color: var(--bg);
-
+  padding: 0px 5rem;
   @media (max-width: 768px) and (orientation: landscape) {
-    min-width: 24px;
+    padding: 0rem 1rem;
   }
 `
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "logo-valia" }, extension: { eq: "png" }) {
+      file(name: { eq: "logo-valia-dark" }, extension: { eq: "png" }) {
         childImageSharp {
-          fixed(width: 40) {
+          fixed(width: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -29,7 +25,7 @@ const Logo = () => {
   return (
     <LogoWrap as={Link} to="/">
       <Img
-        imgStyle={{ objectFit: "contain" }}
+        // imgStyle={{ objectFit: "contain" }}
         fixed={data.file.childImageSharp.fixed}
         alt="logo"
       />

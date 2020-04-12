@@ -40,7 +40,7 @@ const Social = () => {
         <FontAwesomeIcon icon={faGithubSquare} />
       </a>
       <a
-        href="https://www.linkedin.com/in/wojciechsnopkowski"
+        href="https://www.linkedin.com/in/claudia-p%C3%A9rez-val%C3%ADa-87b48790/?originalSubdomain=es"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
         target="_blank"
