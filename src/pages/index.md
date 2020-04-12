@@ -49,7 +49,7 @@ intro:
   description: >
     This is the intro description
 main:
-  heading: Great coffee with no compromises
+  heading: MAIN HEADING
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
