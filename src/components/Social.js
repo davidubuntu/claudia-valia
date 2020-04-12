@@ -31,12 +31,7 @@ const Social = () => {
         {" "}
         <FontAwesomeIcon icon={faEnvelopeSquare} />
       </StyledLink>
-      <a
-        href="https://github.com/Snopkowski"
-        rel="noopener noreferrer"
-        aria-label="Github"
-        target="_blank"
-      >
+      <a href="" rel="noopener noreferrer" aria-label="Github" target="_blank">
         <FontAwesomeIcon icon={faGithubSquare} />
       </a>
       <a
@@ -47,20 +42,10 @@ const Social = () => {
       >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
-      <a
-        href="https://www.medium.com/@snopkowski"
-        rel="noopener noreferrer"
-        aria-label="Medium"
-        target="_blank"
-      >
+      <a href="" rel="noopener noreferrer" aria-label="Medium" target="_blank">
         <FontAwesomeIcon icon={faMedium} />
       </a>
-      <a
-        href="https://dev.to/snopkowski"
-        rel="noopener noreferrer"
-        aria-label="Dev"
-        target="_blank"
-      >
+      <a href="" rel="noopener noreferrer" aria-label="Dev" target="_blank">
         <FontAwesomeIcon icon={faDev} />
       </a>
     </SocialWrap>
