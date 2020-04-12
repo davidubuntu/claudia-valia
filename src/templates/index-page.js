@@ -6,7 +6,7 @@ import { PreviewCompatibleImage } from "../components"
 
 import { Layout, Features, BlogRoll } from "../components"
 
-const IndexPageTemplate = ({
+export const IndexPageTemplate = ({
   image,
   title,
   heading,
