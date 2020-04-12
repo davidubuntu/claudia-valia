@@ -21,11 +21,10 @@ export const IndexPageTemplate = ({
     margin-left: -50vw;
     left: 50%;
   `
-
   return (
     <div>
       <HeaderImage>
-        <PreviewCompatibleImage imageInfo={image} />
+        <PreviewCompatibleImage imageInfo={{ image: image }} />
       </HeaderImage>
       <section className="section section--gradient">
         <div className="container">
@@ -98,7 +97,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image_header}
+        image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -125,13 +124,10 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image_header {
-          alt
-          image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
