@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import media from "../styles/media"
 import { PreviewCompatibleImage } from "../components"
 
 import { Layout, Features, BlogRoll } from "../components"
@@ -21,12 +22,53 @@ export const IndexPageTemplate = ({
     margin-left: -50vw;
     left: 50%;
   `
+  const IndexPage = styled.div``
+  const Section = styled.section``
+  const DescriptionWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 7.5rem 25vw calc((.4rem + .5vw) * 13.5);
+    text-align: center;
+    line-height: 2;
+    ${media.laptop`
+       padding: 6rem 10vw calc((.4rem + .5vw) * 12);
+    `}
+    ${media.tablet`
+       padding: 5rem 5vw calc((.4rem + .5vw) * 12);
+    `}
+    ${media.mobileL`
+       padding: 5rem 11vw calc((.4rem + .5vw) * 12);
+    `}
+  }
+  `
+  const Description = styled.p`
+    font-size: 14px;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    font-weight: 300;
+  `
+  const DescriptionTitle = styled.span`
+    font-weight: bold;
+  `
+
   return (
-    <div>
+    <IndexPage>
       <HeaderImage>
         <PreviewCompatibleImage imageInfo={{ image: image }} />
       </HeaderImage>
-      <section className="section section--gradient">
+      <Section>
+        <DescriptionWrapper>
+          <Description>
+            <DescriptionTitle>{mainpitch.title} </DescriptionTitle>
+            {mainpitch.description}
+          </Description>
+        </DescriptionWrapper>
+      </Section>
+      <Section></Section>
+
+      {/*  <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -75,8 +117,8 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </section> */}
+    </IndexPage>
   )
 }
 

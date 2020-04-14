@@ -5,12 +5,11 @@ image: /img/bg-home.jpg
 heading: Design your wolrd
 subheading: Claudia Perez Valía
 mainpitch:
-  title: Why Interior Design
+  title: HELLO ! I AM CLAUDIA  PEREZ VALIA
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    , I´M A POLIVALENT DESIGNER AND PASSIONATE ABOUT DESIGN
+    IN ALL IT SHAPES AND FORMS. I UNDERSTAND DESIGN AS AN INTERDISCIPLINARY
+    AND COLLECTIVE EFFORT, WHICH RESPOND TO THE CONTEMPORARY SOCIAL NEEDS.
 intro:
   blurbs:
     - image: /img/bg-cvalia.jpeg
