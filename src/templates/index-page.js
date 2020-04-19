@@ -3,18 +3,11 @@ import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import media from "../styles/media"
-import { PreviewCompatibleImage } from "../components"
-
-import { Layout, Features, BlogRoll } from "../components"
+import { PreviewCompatibleImage,Layout } from "../components"
 
 export const IndexPageTemplate = ({
   image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
+  mainheader,
 }) => {
   const HeaderImage = styled.div`
     width: 100vw;
@@ -41,7 +34,6 @@ export const IndexPageTemplate = ({
     ${media.mobileL`
        padding: 5rem 11vw calc((.4rem + .5vw) * 12);
     `}
-  }
   `
   const Description = styled.p`
     font-size: 14px;
@@ -61,14 +53,12 @@ export const IndexPageTemplate = ({
       <Section>
         <DescriptionWrapper>
           <Description>
-            <DescriptionTitle>{mainpitch.title} </DescriptionTitle>
-            {mainpitch.description}
+            <DescriptionTitle>{mainheader.title} </DescriptionTitle>
+            {mainheader.description}
           </Description>
         </DescriptionWrapper>
       </Section>
-      <Section></Section>
-
-      {/*  <section className="section section--gradient">
+{/*        <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -76,10 +66,10 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <h1 className="title">{mainheader.title}</h1>
                     </div>
                     <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
+                      <h3 className="subtitle">{mainheader.description}</h3>
                     </div>
                   </div>
                   <div className="columns">
@@ -124,14 +114,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  mainheader: PropTypes.object,
 }
 
 const IndexPage = ({ data }) => {
@@ -140,12 +123,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        mainheader={frontmatter.mainheader}
       />
     </Layout>
   )
@@ -165,7 +143,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -173,25 +150,8 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        subheading
-        mainpitch {
+        mainheader {
           title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
           description
         }
       }
