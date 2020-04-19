@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-image: /img/bg-cvalia.jpeg
+image: /img/bg-home.jpg
 mainheader:
   title: HELLO ! I AM CLAUDIA  PEREZ VALIA
   description: >
