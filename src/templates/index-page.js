@@ -9,7 +9,6 @@ export const IndexPageTemplate = ({
   image,
   mainheader,
 }) => {
-  console.log('mainheader',mainheader)
   const HeaderImage = styled.div`
     width: 100vw;
     position: relative;
